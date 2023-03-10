@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="utf-8">
+        <meta property="og:url" content="http://labs.iconic.network/mapa" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Crie seu Mapa de Influências - ICONIC Labs" />
+        <meta property="og:site_name" content="Crie seu Mapa de Influências - ICONIC Labs" />
+        <meta name="twitter:title" content="Crie seu Mapa de Influências - ICONIC Labs" />
+        <meta property="og:description" content="Gerador de Mapa de Influências para artistas, desenvolvido por ICONIC Network." />
+        <meta property="og:image" content="http://labs.iconic.network/mapa/img/gerador-mapa-seo.jpg" />
+        <meta name="twitter:image" content="http://labs.iconic.network/mapa/img/gerador-mapa-seo.jpg" />
+        <meta name="twitter:card" content="summary" />
+        
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        
+        <script src="js/html2canvas.js"></script>
+        <script src="js/download.js"></script>
+        <script src="js/velocity.min.js"></script>
+        
+        <title>Crie seu Mapa de Influências - ICONIC Labs</title>        
+        
+    </head>
+    <body class="template1">
+        
+        <div class="map_cover"></div>
+        
+        <div class="top">
+            
+            <div class="logo">
+                <img src="img/top-logo-iconiclabs.png" alt="ICONIC Labs" />
+                <div class="title">Gerador de Mapa de Influências</div>
+                <div class="version">v1.0 Beta</div>
+            </div>
+            
+            <div class="controls">
+                
+                <div class="btn_options">Opções</div>
+                
+                <div class="btn_save gradient" id="btn_save_image">
+                    Salvar
+                </div>
+                
+                <div class="btn_info"></div>
+                
+                <div class="btn_support"></div>
+
+            </div>
+            
+        </div>        
+        
+        <div class="boxes">
+        
+            <div class="options_box gradient135">
+            
+                <div class="option_titles">
+                    <div>Mostrar Títulos</div>
+                    <section id="opt_titles">
+                      <input type="checkbox" id="opt_titles_checkbox" checked />
+                      <label for="opt_titles_checkbox"></label>
+                    </section>
+                </div>
+                
+                <div class="option_colors">
+                    <div>Cores</div>
+                    <div id="opt_colors">
+                        <div class="btn color_light"></div>
+                        <div class="btn color_dark"></div>
+                    </div>
+                </div>
+                
+                <div class="option_templates">
+                    <div>Template</div>
+                    <div id="opt_templates">
+                        <div class="btn current_template" id="btn_template1">1</div>
+                        <div class="btn" id="btn_template2">2</div>
+                        <div class="btn" id="btn_template3">3</div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="info_box gradient135">
+                Faça um mapa das suas maiores influências! Insira imagens de artistas, filmes, animações ou qualquer outra coisa que influencia você.
+                
+                <br /><br />
+                <em>Desenvolvido por ICONIC Network<br />Inspirado por fox-orian</em>
+            </div>
+            
+            <div class="support_box gradient135">
+                Reportar um problema ou sugerir melhoria.
+            </div>
+            
+            <div class="warning_box">Preencha o seu nome, por favor.</div>        
+            
+        </div>
+        
+        <div class="workspace">
+        
+            <div class="app" id="image_content_holder">
+                
+                <div class="author">
+                    <div class="text">Mapa de Influências</div>
+                    <input type="text" class="input_author" value="Escreva Seu Nome">
+                </div>
+                
+                <div class="map"></div>
+                
+                <div class="credits">labs.iconic.network/mapa</div>
+                
+            </div>
+            
+        </div>     
+
+        <div class="img_preview_box">
+            
+            <div class="bg_overlay"></div>
+            
+            <div class="loading"></div>
+            
+            <div class="img_holder"></div>
+            
+            <a class="btn_preview_download gradient" href="#">Download</a>
+            
+            <a class="btn_preview_close outline" href="#">Voltar</a>
+            
+        </div>
+        
+        <div class="confirm_box">
+            
+            <div class="bg_overlay"></div>
+            
+            <div class="confirm_holder">
+                <div class="confirm_text">Ao trocar de template você perderá todas as imagens já colocadas. Deseja continuar mesmo assim?</div>
+                <div class="confirm_buttons">
+                    <div class="btn_no gradient">Não</div>
+                    <div class="btn_yes outline">Sim</div>
+                </div>
+            </div>
+            
+        </div>
+         
+        <script src="js/app.js"></script>
+        
+    </body>
+</html>
